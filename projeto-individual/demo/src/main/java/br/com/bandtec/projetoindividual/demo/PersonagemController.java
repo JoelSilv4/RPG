@@ -21,14 +21,10 @@ public class PersonagemController {
         }
     }
 
-    @PostMapping
-    public void AdcionarElfo(@RequestBody Elfo e) {
-        personagens.add(e);
-    }
 
     @PostMapping
-    public void AdcionarOrc(@RequestBody Orc o) {
-        personagens.add(o);
+    public void AdcionarPersonagem(@RequestBody Personagem p) {
+        personagens.add(p);
     }
 
     @GetMapping("/{id}")
